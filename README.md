@@ -1,8 +1,6 @@
 # Vehicle Damange Detection App
 
-This project is an end-to-end car damage image classification system built using deep learning and deployed with FastAPI and Streamlit.  
-Users can drag and drop a car image (front or rear third-quarter view), and the system predicts the type of damage using a ResNet50 transfer learning model.  
-The project focuses on handling limited data through regularization, transfer learning, and building a complete ML pipeline from training to deployment.
+This project is an end-to-end car damage image classification system built using deep learning and deployed with FastAPI and Streamlit.Users can drag and drop a car image (front or rear third-quarter view), and the system predicts the type of damage using a ResNet50 transfer learning model. The project focuses on handling limited data through regularization, transfer learning, and building a complete ML pipeline from training to deployment.
 
 ![app](Streamlit-app/app_screenshot.jpg)
 
@@ -27,7 +25,7 @@ The project focuses on handling limited data through regularization, transfer le
 
 - **Fastapi-server** – Contains the FastAPI backend responsible for loading the trained model and handling inference requests.
 
-- **model** – Stores the trained deep learning models (CNN, EfficientNet, ResNet50) saved after training and hyperparameter tuning.
+- **model** – Stores the trained deep learning models (CNN,ResNet50) saved after training and hyperparameter tuning.
 
 - **training** – Contains the dataset organized by damage categories (front and rear views), Jupyter notebooks used for data preprocessing, model training, experimentation, and evaluation. 
 
@@ -39,77 +37,45 @@ The project focuses on handling limited data through regularization, transfer le
 ## 🧠 Methodology
 
 1️) Data Preparation
-
 - Dataset size: ~2300 images
-
 - Classes:
-
      - Front Normal
      - Front Crushed
      - Front Breakage
      - Rear Normal
      - Rear Crushed
      - Rear Breakage
-  
 - Images resized and normalized
-
 - Data split into training and validation sets
-
 2️) Model Experiments
-
 -  Custom CNN (Baseline)
-
    - Initial CNN model trained from scratch
-
    - Regularization techniques applied:
-
      - Batch Normalization
      - Dropout
      - L2 regularization (weight_decay = 1e-4)
    - Result: Limited accuracy due to small dataset
-
 - EfficientNet-B0 (Transfer Learning)
-
   - Pretrained EfficientNet-B0 used
-
   - Fully connected layer replaced
-
   - Backbone layers frozen
-
   - Result: Slight improvement over CNN
-
 - ResNet50 (Final Model)
-
   - Pretrained ResNet50 used
-
   - Classification head modified for 6 classes
-
   - Backbone layers frozen
-
   - Best performing model with ~79.65% validation accuracy
-
 3️) Hyperparameter Optimization
-
 - Optuna used for tuning:
-
   - Learning rate
-
   - Dropout rate
-
   - Optimizer selection
-
   - Batch size
-
 - Improved stability and generalization
-
 4️) Deployment
-
 - Trained model saved and loaded for inference
-
 - Backend created using FastAPI
-
 - Frontend built using Streamlit
-
 - End-to-end prediction pipeline implemented
 
 ## 📌 Project Architecture
@@ -117,7 +83,6 @@ The project focuses on handling limited data through regularization, transfer le
 
 ## Demo video
 https://drive.google.com/file/d/1lVU3adccuvMw3I5RqQ1fZQ-UdOzwhdTs/view?usp=sharing
-
 
 ## How to Use
 1. Start the backend server with FastAPI.
@@ -129,20 +94,13 @@ https://drive.google.com/file/d/1lVU3adccuvMw3I5RqQ1fZQ-UdOzwhdTs/view?usp=shari
 
 ## 🛠️ Tech Stack
 
-- Programming Language: Python
-
-- Deep Learning: PyTorch
-
-- Models: CNN, EfficientNet-B0, ResNet50
-
-- Hyperparameter Tuning: Optuna
-
-- Backend: FastAPI
-
-- Frontend: Streamlit
-
-- Image Processing: Pillow
-
+- Programming Language: Python.
+- Deep Learning: PyTorch.
+- Models: CNN,  ResNet50.
+- Hyperparameter Tuning: Optuna.
+- Backend: FastAPI.
+- Frontend: Streamlit.
+- Image Processing: Pillow.
 
 ## Setup Instructions
 
