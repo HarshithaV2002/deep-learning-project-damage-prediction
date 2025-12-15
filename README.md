@@ -113,7 +113,7 @@ The project focuses on handling limited data through regularization, transfer le
 - End-to-end prediction pipeline implemented
 
 ## 📌 Project Architecture
-![architecture](architecture.png)
+![architecture](Streamlit-app/architecture.png)
 
 ## Demo video
 https://drive.google.com/file/d/1lVU3adccuvMw3I5RqQ1fZQ-UdOzwhdTs/view?usp=sharing
