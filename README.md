@@ -4,7 +4,7 @@ This project is an end-to-end car damage image classification system built using
 Users can drag and drop a car image (front or rear third-quarter view), and the system predicts the type of damage using a ResNet50 transfer learning model.  
 The project focuses on handling limited data through regularization, transfer learning, and building a complete ML pipeline from training to deployment.
 
-![app](app_screenshot.jpg)
+![app](Streamlit-app/app_screenshot.jpg)
 
 ## 🎯 Features
 
