@@ -47,6 +47,7 @@ This project is an end-to-end car damage image classification system built using
      - Rear Breakage
 - Images resized and normalized
 - Data split into training and validation sets
+  
 2️) Model Experiments
 -  Custom CNN (Baseline)
    - Initial CNN model trained from scratch
@@ -65,6 +66,7 @@ This project is an end-to-end car damage image classification system built using
   - Classification head modified for 6 classes
   - Backbone layers frozen
   - Best performing model with ~79.65% validation accuracy
+    
 3️) Hyperparameter Optimization
 - Optuna used for tuning:
   - Learning rate
@@ -72,6 +74,7 @@ This project is an end-to-end car damage image classification system built using
   - Optimizer selection
   - Batch size
 - Improved stability and generalization
+  
 4️) Deployment
 - Trained model saved and loaded for inference
 - Backend created using FastAPI
